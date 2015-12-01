@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F404BA56-C9AB-4E5A-951B-354779615FD6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Softcom</RootNamespace>
+    <AssemblyName>Softcom</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\app\Nutic\product\12.1.0\client_1\odp.net\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\DropDownItem.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Projekti\DodajProjekat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projekti\DodajProjekat.Designer.cs">
+      <DependentUpon>DodajProjekat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projekti\DodajRadnikaNaProjekatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projekti\DodajRadnikaNaProjekatForm.Designer.cs">
+      <DependentUpon>DodajRadnikaNaProjekatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projekti\IzmeniProjekatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projekti\IzmeniProjekatForm.Designer.cs">
+      <DependentUpon>IzmeniProjekatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Projekti\SviProjektiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projekti\SviProjektiForm.Designer.cs">
+      <DependentUpon>SviProjektiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarForms\IzmeniSaradnikaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SarForms\IzmeniSaradnikaForm.Designer.cs">
+      <DependentUpon>IzmeniSaradnikaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarForms\NovSaradnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SarForms\NovSaradnikForm.Designer.cs">
+      <DependentUpon>NovSaradnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarForms\SviSaradniciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SarForms\SviSaradniciForm.Designer.cs">
+      <DependentUpon>SviSaradniciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZapForms\IzmeniZaposleniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZapForms\IzmeniZaposleniForm.Designer.cs">
+      <DependentUpon>IzmeniZaposleniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZapForms\NoviZaposleniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZapForms\NoviZaposleniForm.Designer.cs">
+      <DependentUpon>NoviZaposleniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZapForms\SviZaposleniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZapForms\SviZaposleniForm.Designer.cs">
+      <DependentUpon>SviZaposleniForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projekti\DodajProjekat.resx">
+      <DependentUpon>DodajProjekat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projekti\DodajRadnikaNaProjekatForm.resx">
+      <DependentUpon>DodajRadnikaNaProjekatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projekti\IzmeniProjekatForm.resx">
+      <DependentUpon>IzmeniProjekatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Projekti\SviProjektiForm.resx">
+      <DependentUpon>SviProjektiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarForms\IzmeniSaradnikaForm.resx">
+      <DependentUpon>IzmeniSaradnikaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarForms\NovSaradnikForm.resx">
+      <DependentUpon>NovSaradnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarForms\SviSaradniciForm.resx">
+      <DependentUpon>SviSaradniciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZapForms\IzmeniZaposleniForm.resx">
+      <DependentUpon>IzmeniZaposleniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZapForms\NoviZaposleniForm.resx">
+      <DependentUpon>NoviZaposleniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZapForms\SviZaposleniForm.resx">
+      <DependentUpon>SviZaposleniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataLayer\DataLayer\DataLayer.csproj">
+      <Project>{fc634bf4-a500-4f16-9282-59d062f8ef9d}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

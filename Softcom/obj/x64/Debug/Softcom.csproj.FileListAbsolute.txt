@@ -1,0 +1,8 @@
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\bin\x64\Debug\Softcom.exe.config
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\obj\x64\Debug\Softcom.csprojResolveAssemblyReference.cache
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\obj\x64\Debug\Softcom.MainForm.resources
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\obj\x64\Debug\Softcom.Projekti.DodajProjekat.resources
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\obj\x64\Debug\Softcom.Projekti.IzmeniProjekatForm.resources
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\obj\x64\Debug\Softcom.Properties.Resources.resources
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\obj\x64\Debug\Softcom.SviProjektiForm.resources
+C:\Users\Nutic\documents\visual studio 2013\Projects\Softcom\Softcom\obj\x64\Debug\Softcom.csproj.GenerateResource.Cache
